@@ -1,0 +1,10 @@
+.flex {
+    display: flex ;
+    flex-direction:  none;
+}
+
+.flex>div{
+    flex:1;
+    border: 1px solid #333;
+    padding: 0.5em;
+}

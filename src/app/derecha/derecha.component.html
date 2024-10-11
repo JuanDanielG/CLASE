@@ -1,0 +1,17 @@
+<form (submit)="onSubmit()">
+
+    <div class="chat" #scroll [scrollTop]="scroll.scrollHeight">
+        <ul>
+            @for (item of mensajeService.mensajes; track $index) {
+                <div>
+                    <label for="">{{item.author}}</label><br />
+                    <label for="">{{item.msn}}</label>
+                </div>
+            }
+        </ul>
+    </div>
+    <div>
+        <label>Mensaje</label> <br>
+        <input name="mensaje" id="mensaje" [(ngModel)]="mensaje" />
+    </div>
+</form>
